@@ -17,6 +17,11 @@ body {
   overflow-x: hidden;
 }
 
+.team-page {
+  padding: 4rem 2rem 5rem;
+}
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -242,6 +247,14 @@ a {
   margin-bottom: 1rem;
 }
 
+.team-members-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+
 /* FOOTER */
 .footer {
   border-top: 1px solid #e9e9e9;
@@ -257,10 +270,19 @@ a {
   .hero,
   .home-preview-grid,
   .content-grid,
-  .cards-grid,
-  .team-grid {
+  .cards-grid {
     grid-template-columns: 1fr;
   }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
 
   .navbar-inner {
     flex-direction: column;
