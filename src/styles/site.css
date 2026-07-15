@@ -144,6 +144,8 @@ a {
   border-radius: 999px;
   font-size: 0.95rem;
   font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
@@ -248,11 +250,30 @@ a {
   border-radius: 20px;
 }
 
-.cards-grid {
+.events-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.event-date {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+.linkedin-btn {
+  margin-top: 1.75rem;
+}
+
+.see-more-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .team-grid {
@@ -291,7 +312,7 @@ a {
   .hero,
   .home-preview-grid,
   .content-grid,
-  .cards-grid {
+  .events-grid {
     grid-template-columns: 1fr;
   }
 
