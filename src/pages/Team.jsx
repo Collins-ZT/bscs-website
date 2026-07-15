@@ -31,7 +31,7 @@ function Team() {
         <section className="team-section">
           <div className="team-members-grid">
             {members.map((member) => (
-              <article className="team-member-card" key={member.role}>
+              <article className="team-member-card" key={member.name}>
                 <div className="team-member-photo">Photo</div>
                 <div className="team-member-info">
                   <h2>{member.role}</h2>
