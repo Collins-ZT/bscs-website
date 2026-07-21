@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ transparent = false }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="navbar">
+    <header className={`navbar${transparent ? " navbar-transparent" : ""}`}>
       <div className="navbar-inner">
         <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
           BSCS
@@ -24,17 +24,11 @@ function Navbar() {
         </button>
 
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
-          <Link to="/" onClick={() => setIsOpen(false)}>
-            Home
-          </Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>
             About
           </Link>
           <Link to="/events" onClick={() => setIsOpen(false)}>
             Events
-          </Link>
-          <Link to="/team" onClick={() => setIsOpen(false)}>
-            Team
           </Link>
         </nav>
       </div>
