@@ -6,40 +6,35 @@ const LINKEDIN_URL = "https://linkedin.com/company/REPLACE_ME";
 
 const events = [
   {
-    title: "Resume & Interview Prep Workshop",
-    date: "September 18, 2026",
-    description:
-      "A hands-on session covering resume reviews, mock interviews, and tips for breaking into tech.",
+    title: "Potluck",
+    date: "April 21, 2026",
+    description: "Yummy",
   },
   {
-    title: "Alumni Networking Night",
-    date: "October 3, 2026",
-    description:
-      "Connect with BSCS alumni working across software, data, and product roles at companies near and far.",
+    title: "Career Sesh",
+    date: "March 28, 2026",
+    description: "Talk to tech guys",
   },
   {
-    title: "Welcome Back Social",
-    date: "October 15, 2026",
-    description:
-      "Kick off the semester with games, food, and a chance to meet other BSCS members.",
+    title: "Movie Night",
+    date: "February 11, 2026",
+    description: "movie",
   },
   {
-    title: "Intro to Web Development Workshop",
-    date: "November 5, 2026",
+    title: "Github Workshop",
+    date: "January 27, 2026",
     description:
-      "A beginner-friendly walkthrough of building your first website, no experience required.",
+      "A beginner-friendly walkthrough of using GitHub, no experience required.",
   },
   {
-    title: "Tech Talk: Careers in AI",
-    date: "November 20, 2026",
-    description:
-      "A panel of industry professionals share how they broke into AI and machine learning careers.",
+    title: "Bowling Night",
+    date: "November 19, 2025",
+    description: "End-of-semester colla with NSBE",
   },
   {
-    title: "End of Semester Celebration",
-    date: "December 5, 2026",
-    description:
-      "Celebrating the semester's wins with the whole BSCS community before finals.",
+    title: "Kickoff Event",
+    date: "October 21st, 2025",
+    description: "Our first event!",
   },
 ];
 
