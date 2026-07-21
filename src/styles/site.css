@@ -182,6 +182,48 @@ a {
 .hero-image {
   min-height: 420px;
   border-radius: 24px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* HERO - DARK THEME */
+.hero-dark {
+  background: #0d1526;
+  border-radius: 28px;
+  margin: 2rem 2rem 0;
+  width: auto;
+}
+
+.hero-dark .eyebrow {
+  color: #8fa3c7;
+}
+
+.hero-dark h1 {
+  color: #ffffff;
+}
+
+.hero-dark .hero-description {
+  color: #c3cbdb;
+}
+
+.hero-dark .hero-image {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #9aa5bb;
+}
+
+.hero-dark .primary-btn {
+  background: #ffffff;
+  color: #0d1526;
+}
+
+.hero-dark .primary-btn:hover {
+  background: #dfe6f2;
 }
 
 /* HOME PREVIEW CARDS */
@@ -367,5 +409,9 @@ a {
 
   .hero-image {
     min-height: 280px;
+  }
+
+  .hero-dark {
+    margin: 1.25rem 1.25rem 0;
   }
 }

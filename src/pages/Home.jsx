@@ -1,14 +1,19 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
+const BECOME_MEMBER_URL = "REPLACE_ME_MEMBERSHIP_FORM_URL";
+
 function Home() {
+  const [heroImageFailed, setHeroImageFailed] = useState(false);
+
   return (
     <div className="page">
       <Navbar />
 
       <main>
-        <section className="hero">
+        <section className="hero hero-dark">
           <div className="hero-text">
             <p className="eyebrow">University of Windsor</p>
             <h1>Black Students in Computer Science</h1>
@@ -18,17 +23,27 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <Link to="/about" className="primary-btn">
-                Learn More
-              </Link>
-              <Link to="/events" className="secondary-btn">
-                View Events
-              </Link>
+              <a
+                href={BECOME_MEMBER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-btn"
+              >
+                Become a Member
+              </a>
             </div>
           </div>
 
           <div className="hero-image">
-            <span>Photo placeholder</span>
+            {heroImageFailed ? (
+              <span>Photo placeholder</span>
+            ) : (
+              <img
+                src="/images/hero/IMG_7369.jpg"
+                alt="BSCS community"
+                onError={() => setHeroImageFailed(true)}
+              />
+            )}
           </div>
         </section>
 
