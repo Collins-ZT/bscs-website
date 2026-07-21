@@ -39,7 +39,7 @@ function Home() {
               <span>Photo placeholder</span>
             ) : (
               <img
-                src="/images/hero/IMG_7369.jpg"
+                src="/hero/IMG_7369.jpg"
                 alt="BSCS community"
                 onError={() => setHeroImageFailed(true)}
               />
