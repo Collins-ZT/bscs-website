@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import UpcomingEvents from "../components/UpcomingEvents";
 
 const LINKEDIN_URL = "https://linkedin.com/company/REPLACE_ME";
 
@@ -49,22 +50,25 @@ function Events() {
       <Navbar />
 
       <main className="subpage">
-        <div className="page-header">
-          <p className="eyebrow">Events</p>
-          <h1>What We Host</h1>
-          <p>
-            From workshops to socials, BSCS creates spaces for students to
-            learn, connect, and grow.
-          </p>
+        <div className="page-header-row">
+          <div className="page-header">
+            <p className="eyebrow">Events</p>
+              <h1>What We Host</h1>
+              <p>
+                From workshops to socials, BSCS creates spaces for students to
+                learn, connect, and grow.
+              </p>
 
-          <a
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="secondary-btn linkedin-btn"
-          >
-            Follow us on LinkedIn for event updates
-          </a>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="secondary-btn linkedin-btn"
+            >
+              Follow us on LinkedIn for event updates
+            </a>
+          </div>
+          <UpcomingEvents />
         </div>
 
         <div className="events-grid">
