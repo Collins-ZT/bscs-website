@@ -377,6 +377,13 @@ a {
   margin-bottom: 3rem;
 }
 
+.page-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
 .content-grid {
   width: 100%;
   display: grid;
@@ -494,6 +501,10 @@ a {
   .events-grid,
   .involved-section {
     grid-template-columns: 1fr;
+  }
+  
+   .page-header-row {
+    flex-direction: column;
   }
 
   .involved-image {
