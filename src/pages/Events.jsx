@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import UpcomingEvents from "../components/UpcomingEvents";
 import SlideShow from "../components/SlideShow";
 
-const LINKEDIN_URL = "https://linkedin.com/company/REPLACE_ME";
+const LINKEDIN_URL = "https://www.linkedin.com/company/uwindsor-bscs/posts/?feedView=all";
 
 {/*const events = [
   {

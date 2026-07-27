@@ -4,7 +4,7 @@ import "./SlideShow.css";
 const slides = [
     /* Should be simple to add events to the slide show. Just follow the format image:"<image_path>", title: "<title>", date: "<date>", description: ["<description>"] } */
 
-    { image: "/hero/hero01.JPG", title: "Kickoff Event", date: "October 21st, 2025", description: [
+    { image: "/hero/hero01.JPG", title: "Kickoff Event", date: "October 21, 2025", description: [
         "Every great journey begins with a strong first step — and our BSCS Kickoff Meeting was exactly that. ✨",
         "Thank you to everyone who showed up, supported, and contributed in any way. Your presence matters, your ideas matter, and together we're building something meaningful.",
         "As we grow, we're opening up executive roles for those who want to lead, create, and shape the vision of BSCS."
