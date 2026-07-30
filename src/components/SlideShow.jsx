@@ -18,13 +18,13 @@ const slides = [
         "We’re all about students helping students and seeing that collaboration in action was the highlight of the day. 🧱✊🏾"
         ]},
 
-    { image: null, title: "Movie Night" , date: "February 11, 2026", description: ["We had a blast at our BSCS Movie Night! 🎬🍿 Thanks to everyone who joined us for an evening of fun, laughter, and great company."]},
+    { image: "/hero/movienight.jpg", title: "Movie Night" , date: "February 11, 2026", description: ["We had a blast at our BSCS Movie Night! 🎬🍿 Thanks to everyone who joined us for an evening of fun, laughter, and great company."]},
 
     { image: "/hero/careersesh01.jpg", title: "Career Sesh", date: "March 28, 2026", description: ["What an incredible day at the BSCS Career Event! 🌟 Grateful to our inspiring speakers, supportive sponsors, and amazing team for making this possible.",
         "The insights shared and connections made are stepping stones for all of us in tech. 💻✨"
     ]},
 
-    { image: null, title: "Potluck", date: "April 21, 2026", description: ["We took over the BSI Lounge with music, games, and food to end the semester.", 
+    { image: "/hero/potluck.jpg", title: "Potluck", date: "April 21, 2026", description: ["We took over the BSI Lounge with music, games, and food to end the semester.", 
         "Thanks to everyone who came out to celebrate with us!"
     ]},
 
