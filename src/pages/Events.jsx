@@ -1,11 +1,12 @@
-import { useState } from "react";
+{/*import { useState } from "react";*/}
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import UpcomingEvents from "../components/UpcomingEvents";
+import SlideShow from "../components/SlideShow";
 
-const LINKEDIN_URL = "https://linkedin.com/company/REPLACE_ME";
+const LINKEDIN_URL = "https://www.linkedin.com/company/uwindsor-bscs/posts/?feedView=all";
 
-const events = [
+{/*const events = [
   {
     title: "Potluck",
     date: "April 21, 2026",
@@ -37,13 +38,14 @@ const events = [
     date: "October 21st, 2025",
     description: "Our first event!",
   },
-];
+]; 
 
-const VISIBLE_COUNT = 3;
+const VISIBLE_COUNT = 3;*/}
 
 function Events() {
-  const [showAll, setShowAll] = useState(false);
+  {/*const [showAll, setShowAll] = useState(false);
   const visibleEvents = showAll ? events : events.slice(0, VISIBLE_COUNT);
+  */}
 
   return (
     <div className="page">
@@ -71,7 +73,9 @@ function Events() {
           <UpcomingEvents />
         </div>
 
-        <div className="events-grid">
+        <SlideShow />
+
+        {/*<div className="events-grid">
           {visibleEvents.map((event) => (
             <article className="info-card" key={event.title}>
               <p className="event-date">{event.date}</p>
@@ -91,7 +95,7 @@ function Events() {
               {showAll ? "Show less" : "See more events"}
             </button>
           </div>
-        )}
+        )} */}
       </main>
 
       <Footer />
