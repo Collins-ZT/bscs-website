@@ -16,7 +16,7 @@
   border: 1px solid var(--line);
   border-radius: 16px;
   overflow: hidden;
-  height: 600px;
+  min-height: 480px;
   transition: opacity 0.15s ease-in-out;
   opacity: 1;
 }
@@ -26,7 +26,7 @@
 }
 
 .slideshow__photo {
-  flex: 1;
+  flex: 1.25;
   min-height: 280px;
   background: var(--surface);
   display: flex;
@@ -50,7 +50,7 @@
 
 .slideshow__info {
   flex: 1;
-  padding: 2.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -104,7 +104,7 @@
 @media (max-width: 860px) {
   .slideshow__card {
     flex-direction: column;
-    height: auto;
+    min-height: 0;
   }
 
   .slideshow__photo {

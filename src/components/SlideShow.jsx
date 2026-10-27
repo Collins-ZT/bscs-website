@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./SlideShow.css";
 
 const slides = [
-  /* Should be simple to add events to the slide show. Just follow the format image:"<image_path>", imageWidth/imageHeight: "<real pixel dimensions of the image file, prevents layout shift>", imagePosition (optional): "<crop focus, e.g. '95% center' to keep a subject on the right in frame>", title: "<title>", date: "<date>", description: ["<description>"] } */
+  /* Add new events to the END of this list: the last slide is the most recent and is shown first. Just follow the format image:"<image_path>", imageWidth/imageHeight: "<real pixel dimensions of the image file, prevents layout shift>", imagePosition (optional): "<crop focus, e.g. '95% center' to keep a subject on the right in frame>", title: "<title>", date: "<date>", description: ["<description>"] } */
 
   {
     image: "/hero/hero01.JPG",
@@ -112,7 +112,7 @@ export default function EventSlideshow() {
     });
   }, []);
 
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(slides.length - 1);
   const [visible, setVisible] = useState(true);
 
   const goTo = (index) => {
@@ -124,7 +124,7 @@ export default function EventSlideshow() {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => goTo(current + 1), 5 * 60 * 1000);
+    const timer = setTimeout(() => goTo(current - 1), 5 * 60 * 1000);
     return () => clearTimeout(timer);
   }, [current]);
 
@@ -174,18 +174,18 @@ export default function EventSlideshow() {
           <div className="slideshow__footer">
             <button
               className="slideshow__btn"
-              onClick={() => goTo(current - 1)}
+              onClick={() => goTo(current + 1)}
             >
-              ← Previous Event
+              ← Next Event
             </button>
             <span className="slideshow__counter">
-              {current + 1} / {slides.length}
+              {slides.length - current} / {slides.length}
             </span>
             <button
               className="slideshow__btn"
-              onClick={() => goTo(current + 1)}
+              onClick={() => goTo(current - 1)}
             >
-              Next Event →
+              Previous Event →
             </button>
           </div>
         </div>
